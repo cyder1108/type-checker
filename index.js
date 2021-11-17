@@ -46,7 +46,7 @@ class TC_Type{
     return false
   }
 
-  isOnly(...args) {
+  isShould(...args) {
     if( !this.isEither(...args) ) {
       throw new Error(`TypeError: Allow Only ${args.join(" or ")}`)
     }
